@@ -1,0 +1,30 @@
+﻿<Window x:Class="FirstWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FirstWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="1" Margin="0,36,0,73" Grid.RowSpan="2">Name:</Label>
+        <TextBox Margin="10,75,50,10" Grid.Row="0" Grid.Column="1" x:Name="txtBox_Name"/>
+        <Label Grid.Row="1" Grid.Column="1">Alter:</Label>
+        <TextBox Margin="10,30,50,54" Grid.Row="1" Grid.Column="1" x:Name="txtbox_age"/>
+        <Button Click="Button_Click" Margin ="10,84,50,85" Grid.Row="1" Grid.Column="1" Grid.RowSpan="2">Akzeptieren</Button>
+        <TextBlock Margin ="0,38,222,108" Grid.Row="2" x:Name="txtblock_output" HorizontalAlignment="Right" Width="328" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
+
+    </Grid>
+</Window>
